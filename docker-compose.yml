@@ -4,3 +4,8 @@ services:
     image: mbopm/cyberchef:latest
     ports:
       - "127.0.0.1:8080:80"
+    networks:
+      - cyberchef
+networks:
+  cyberchef:
+    name: net_cyberchef
